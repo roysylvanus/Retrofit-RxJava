@@ -2,11 +2,11 @@ package com.malikali.kotlinxrxjava2xretrofit2.adapter
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
-import kotlinx.android.synthetic.main.post_layout.view.*
+import com.malikali.kotlinxrxjava2xretrofit2.databinding.PostLayoutBinding
 
-class PostViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+class PostViewHolder(binding: PostLayoutBinding) : RecyclerView.ViewHolder(binding.root) {
 
-    val tvAuthor = itemView.tvAuthor
-    val tvTitle = itemView.tvTitle
-    val tvContent = itemView.tvContent
+    val tvAuthor = binding.tvAuthor
+    val tvTitle = binding.tvTitle
+    val tvContent = binding.tvContent
 }
